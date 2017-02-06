@@ -11,7 +11,6 @@
  * @subpackage Accelerate Marketing
  * @since Accelerate Marketing 1.0
  */
-/** <pre><?php print_r($wp_query); exit; ?></pre>  */
 
 get_header(); ?>
 

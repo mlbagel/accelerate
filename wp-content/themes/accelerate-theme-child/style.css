@@ -12,75 +12,237 @@
 
 @import url("../accelerate-theme/style.css");
 
-/* Homepage Styles */
 .home-page {
     background: url("img/taxi-photo.jpg") no-repeat scroll left center / cover rgba(0, 0, 0, 0);
 }
+.button {
+	background: none repeat scroll 0 0 #45ac9d;
+}
+
+
+img {
+    border: 0;
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
 #masthead {
     background: none repeat scroll 0 0 #45ac9d;
 }
-.button {
-    background: none repeat scroll 0 0 #45ac9d;
+
+/* another solution but get rid of floats first
+
+#menu-top-nav .menu-item {
+	display: inline;
 }
+*/
+
+
+#masthead nav ul {
+    margin: 0;
+    overflow: auto;
+}
+.top-nav-link {
+  margin: 0;
+}
+
+.nav-menu {
+  margin:0;
+  font-size: 14px;
+}
+
+.nav-menu ul li {
+	margin:0 30px;
+	text-transform:uppercase;
+}
+
+
+.menu-top-nav-container ul li {
+ margin: 0 0 0 30px;
+ padding: 0;
+ float: left;
+ font-size: 14px;
+ text-transform: uppercase;
+ font-weight: normal;
+}
+
+/* Featured work on homepage */
+.featured-work {
+	overflow:auto;
+}
+
+.featured-work h4 {
+	font-family:'Montserrat';
+	text-transform:uppercase;
+	text-align:center;
+	margin:0 0 40px;
+}
+
+.featured-work ul {
+	margin:0;
+}
+
+.individual-featured-work {
+    float: left;
+    list-style-type: none;
+    margin: 0 5% 0 0;
+    width: 31%;
+}
+
+.individual-featured-work h3 {
+    font-size: 18px;
+    font-weight: normal;
+    margin-top: 24px;
+    text-align: center;
+}
+
+.individual-featured-work:nth-child(3n) {
+    margin: 0;
+    width: 31%;
+}
+
+/* Footer Styles */
+
+.site-footer {
+    color: #a6a6a6;
+    font-size: 14px;
+}
+
+.site-description {
+	width:60%;
+}
+
+.social-media-menu li {
+	float:right;
+	margin:0 5px;
+	text-indent: 0px;
+	list-style-type:none;
+}
+
+
+
+
+
+/* blog post on homepage */
+.recent-posts {
+    clear: both;
+    margin: 100px 0 0;
+    overflow: hidden;
+}
+
 .blog-post {
-	width: 50%;
+	width: 44.75%;
+	padding-right: 50px;
+	float: left;
 }
 .blog-post h4 {
-	font-size: 16px;
-	font-family: 'Montserrat';
+	font: 16px 'Montserrat';
 	color: #a6a6a6;
 	text-transform: uppercase;
+	margin-top: 0;
 }
 .blog-post h2 {
-	font-size: 24px;
-	font-family: 'Montserrat';
-	font-weight: bold;
+	font: 700 24px 'Montserrat';
+	margin: 36px 0;
 }
 .blog-post .read-more-link {
-	font-size: 24px;
-	font-family: 'Montserrat';
-	font-weight: bold;
+	font: 700 15px 'Montserrat';
 	color: #45ac9d;
 	text-transform: uppercase;
 }
-/** Case Study **/
-aside.case-study-sidebar {
-  float: left;
-  width: 300px;
-  font-family: 'open sans';
-  font-weight: normal;
-  margin: 0 65px 0 25px;
 
+/* Case Studies */
+
+article.case-study {
+    clear: both;
+    margin: 40px 0 0;
+    padding: 30px;
 }
+
+aside.case-study-sidebar {
+float: left;
+width: 314px;
+margin: 0 69px 0 0;
+}
+
+aside.case-study-sidebar h5 {
+    color: #999;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.33333;
+    margin: 0 0 12px;
+}
+
+aside.case-study-sidebar h6 {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.5;
+    margin: 0 0 50px;
+}
+
+aside.case-study-sidebar p {
+    font-size: 16.5px;
+    word-spacing: -2px;
+}
+
+aside.case-study-sidebar  a{
+  color: #45ac9d;
+}
+
 div.case-study-images {
-  float: left;
-  width: 600px;
+	float:left;
+
 }
 
 div.case-study-images img {
-  display: block;
-  margin-bottom: 50px;
-  border: 1px solid #dddddd;
+    border: 1px solid #dddddd;
+    margin-bottom: 100px;
 }
-.case-study-sidebar h2 {
-  font-size: 25px;
+
+.full-image {
+  width: 100%;
+}
+/* contact form styles */
+
+/*.nf-form-content {
+  width: 85%;
+}*/
+
+/*#content{
+  padding-left: 15%;
+  width: 85%;
+}*/
+
+div.nf-field  label{
+  font-weight: normal;
+  font-size: 15px;
+}
+
+/*.field-wrap input[type="submit"], .field-wrap input[type="button"], .field-wrap button {
+ width: auto;
+ border: none;
+ float: right;
+ color: white;
+ font-weight: bold;
+ background: #45ac9d;
+ padding-left: 25px;
+}*/
+.s-button {
+  border: none;
+  float: right;
+  color: white;
   font-weight: bold;
-  color: #3b3b3b;
+  background: #45ac9d;
+  padding: 0 13%;
+  text-align: center;
+  line-height: 70px;
+}
+textarea#nf-field-3 {
+  border: 1px solid #bfbfbf;
 }
 
-.case-study-sidebar h5 {
-  font-weight: normal;
-  line-height: normal;
-  font-size: 14px;
-  color: #878787;
-
-}
-.case-study-sidebar h6 {
-  font-weight: normal;
-  font-size: 14.5px;
-  color: #2b2b2b;
-}
-.case-study-sidebar p {
-  font-size: 16.5px;
-  color: #2b2b2b;
+.contact-form-narrow div#content {
+  padding-left: 21%;
+  width: 75%;
 }
