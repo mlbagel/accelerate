@@ -15,6 +15,20 @@
 .home-page {
     background: url("img/taxi-photo.jpg") no-repeat scroll left center / cover rgba(0, 0, 0, 0);
 }
+
+.homepage-hero {
+	text-align:center;
+  margin: 0px 0;
+}
+
+.homepage-hero h2 {
+    color: white;
+    font-family: "open sans";
+    font-size: 28px;
+    font-weight: normal;
+    margin: 97px 173px 0;
+    line-height: 1.333;
+}
 .button {
 	background: none repeat scroll 0 0 #45ac9d;
 }
@@ -69,11 +83,12 @@ img {
 
 /* Featured work on homepage */
 .featured-work {
-	overflow:auto;
+	overflow: auto;
 }
 
 .featured-work h4 {
 	font-family:'Montserrat';
+  font-size: 17px;
 	text-transform:uppercase;
 	text-align:center;
 	margin:0 0 40px;
@@ -87,26 +102,39 @@ img {
     float: left;
     list-style-type: none;
     margin: 0 5% 0 0;
-    width: 31%;
+    width: 30%;
 }
 
-.individual-featured-work h3 {
-    font-size: 18px;
-    font-weight: normal;
+
+.individual-featured-work a {
+	color: #6d6969;
+}
+
+.individual-featured-work h3{
+    font-size: 16.5px;
+    font-weight: 600;
+    color: #3a3939;
     margin-top: 24px;
     text-align: center;
 }
 
 .individual-featured-work:nth-child(3n) {
     margin: 0;
-    width: 31%;
+    width: 30%;
 }
 
+
 /* Footer Styles */
+
+.site-footer .site-info {
+    border-top: 1px dotted #c5c4c4;
+    margin-top: 0px;
+}
 
 .site-footer {
     color: #a6a6a6;
     font-size: 14px;
+    margin-top: 0px;
 }
 
 .site-description {
@@ -120,8 +148,13 @@ img {
 	list-style-type:none;
 }
 
+.about-our-services  {
+	border-bottom: 1px dotted #e3e1e1;
+}
 
-
+#colophon ul {
+  margin: 0;
+}
 
 
 /* blog post on homepage */
@@ -152,9 +185,14 @@ img {
 	text-transform: uppercase;
 }
 
+/*.blog-page .site-content {
+  margin: 0px;
+}*/
+
 /* Case Studies */
 
 article.case-study {
+    overflow:auto;
     clear: both;
     margin: 40px 0 0;
     padding: 30px;
@@ -162,8 +200,8 @@ article.case-study {
 
 aside.case-study-sidebar {
 float: left;
-width: 314px;
-margin: 0 69px 0 0;
+width: 300px;
+margin: 0 85px 0 0;
 }
 
 aside.case-study-sidebar h5 {
@@ -191,18 +229,17 @@ aside.case-study-sidebar  a{
 }
 
 div.case-study-images {
-	float:left;
-
+  width: 515px;
+    float: left;
 }
 
 div.case-study-images img {
     border: 1px solid #dddddd;
     margin-bottom: 100px;
+    float: left;
 }
 
-.full-image {
-  width: 100%;
-}
+
 /* contact form styles */
 
 /*.nf-form-content {
@@ -245,4 +282,93 @@ textarea#nf-field-3 {
 .contact-form-narrow div#content {
   padding-left: 21%;
   width: 75%;
+}
+
+/* About Us */
+
+.about-services .site-content h2{
+  text-align: center;
+}
+
+.about-services .services h2{
+  font-size: 25px;
+  font-weight: 700;
+  color: #3b3b3b;
+  text-align: left;
+}
+
+.about-services h5 {
+    font-size: 16.5px;
+    line-height: 1.5;
+    font-weight: normal;
+    margin: 25px 0;
+}
+
+.about-services .home-page {
+  height: 300px;
+  padding: 10px 0;
+  margin: 0 0;
+}
+
+.about-our-services {
+  margin: 0 194px;
+  text-align: center;
+}
+
+.about-our-services h2 {
+  font-size: 16.5px;
+  text-transform: uppercase;
+}
+
+.about-services ul {
+  margin: 30px 60px;
+}
+
+.individual-services {
+list-style-type: none;
+overflow: auto;
+}
+
+.about-services h2, h5{
+clear: none;
+}
+
+
+.img-left {
+  float: left;
+width: 30%;
+margin: 0px 0px 0px 0px;
+padding: 9px 0px 42px 0px;
+}
+
+.img-right {
+  float: right;
+  width: 30%;
+  margin: 0px -33px 42px 0;
+  padding: 19px 0px 25px 29px;
+}
+
+.contact {
+  border-top: 1px dotted #c5c4c4;
+  margin: 0;
+  display: inline-block;
+  width: 100%
+}
+
+.contact h2 {
+  text-align: justify;
+  float: left;
+  padding: 14px 0px;
+  margin: 40px 85px 40px 123px;
+}
+
+.contact .button {
+  float: left;
+  margin: 40px 0px;
+  color: white;
+  font-family: "montserrat";
+  font-size: 20px;
+  font-weight: bold;
+  padding: 11px 59px;
+  text-align: center;
 }

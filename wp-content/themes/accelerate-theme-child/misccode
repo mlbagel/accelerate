@@ -1,0 +1,49 @@
+<div id="content" role="main">
+
+
+/* About Us */
+
+.about-services .site-content h2{
+  text-align: center;
+}
+
+.about-services .services h2{
+  color: #bfbfbf;
+}
+
+.about-services h5 {
+    font-size: 18px;
+    line-height: 1.3333333333;
+    font-weight: 700;
+    margin: 25px 0;
+}
+
+.about-services .home-page {
+  height: 300px;
+}
+
+.about-services-list ul {
+  overflow: auto;
+}
+
+.individual-services {
+list-style-type: none;
+}
+
+.individual-services h3, h5{
+clear: none;
+}
+
+.img-left {
+  float: left;
+  width: 30%;
+  margin: 25px 0;
+
+}
+
+.img-right {
+  float: right;
+  margin: 0 0 0 0;
+  width: 30%;
+
+}

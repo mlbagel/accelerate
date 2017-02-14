@@ -41,6 +41,18 @@ function create_custom_post_types() {
 				),
 			)
 	);
+
+	register_post_type('services',
+		array(
+			'labels' => array(
+				'name' => __( 'Services' ),
+				'singular_name' => __( 'Service' )
+			),
+			'public' => true,
+			'has_archive' => false,
+		)
+
+);
 }
 
 // Hook this custom post type function into the theme
@@ -52,6 +64,9 @@ add_filter( 'body_class', 'accelerate_body_classes');
 function accelerate_body_classes($classes){
 	if (is_page('contact-us')){
 		$classes[] = 'contact-form-narrow';
+	}
+	elseif (is_page('about')){
+		$classes[] = 'about-services';
 	}
 	return $classes;
 }
