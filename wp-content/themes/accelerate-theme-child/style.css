@@ -203,7 +203,7 @@ img {
 article.case-study {
     overflow:auto;
     clear: both;
-    margin: 40px 0 0;
+    margin: 0px 0 0;
     padding: 30px;
 }
 
@@ -244,7 +244,7 @@ div.case-study-images {
 
 div.case-study-images img {
     border: 1px solid #dddddd;
-    margin-bottom: 100px;
+    margin-bottom: 0px;
     float: left;
 }
 
