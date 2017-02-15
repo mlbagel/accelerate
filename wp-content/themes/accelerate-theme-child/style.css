@@ -14,6 +14,7 @@
 
 .home-page {
     background: url("img/taxi-photo.jpg") no-repeat scroll left center / cover rgba(0, 0, 0, 0);
+    height: 265px;
 }
 
 .homepage-hero {
@@ -21,16 +22,25 @@
   margin: 0px 0;
 }
 
+.homepage-hero h1 {
+  margin: 24px 0 12px;
+}
+
 .homepage-hero h2 {
     color: white;
     font-family: "open sans";
-    font-size: 28px;
+    font-size: 25px;
     font-weight: normal;
     margin: 97px 173px 0;
     line-height: 1.333;
 }
+
+.homepage-hero h3 {
+    margin: 16px 0 58px;
+}
 .button {
 	background: none repeat scroll 0 0 #45ac9d;
+      padding: 12px 50px;
 }
 
 
@@ -43,8 +53,11 @@ img {
 
 #masthead {
     background: none repeat scroll 0 0 #45ac9d;
-}
 
+}
+#masthead h1 {
+  font-size: 22px;
+}
 /* another solution but get rid of floats first
 
 #menu-top-nav .menu-item {
@@ -146,10 +159,6 @@ img {
 	margin:0 5px;
 	text-indent: 0px;
 	list-style-type:none;
-}
-
-.about-our-services  {
-	border-bottom: 1px dotted #e3e1e1;
 }
 
 #colophon ul {
@@ -273,7 +282,7 @@ div.nf-field  label{
   background: #45ac9d;
   padding: 0 13%;
   text-align: center;
-  line-height: 70px;
+  line-height: 55px;
 }
 textarea#nf-field-3 {
   border: 1px solid #bfbfbf;
@@ -281,10 +290,16 @@ textarea#nf-field-3 {
 
 .contact-form-narrow div#content {
   padding-left: 21%;
-  width: 75%;
+  width: 63%;
 }
 
 /* About Us */
+
+.about-services .home-page {
+  height: 300px;
+  padding: 10px 0;
+  margin: 0 0;
+}
 
 .about-services .site-content h2{
   text-align: center;
@@ -304,14 +319,10 @@ textarea#nf-field-3 {
     margin: 25px 0;
 }
 
-.about-services .home-page {
-  height: 300px;
-  padding: 10px 0;
-  margin: 0 0;
-}
+
 
 .about-our-services {
-  margin: 0 194px;
+  margin: 0 227px;
   text-align: center;
 }
 
@@ -324,15 +335,14 @@ textarea#nf-field-3 {
   margin: 30px 60px;
 }
 
-.individual-services {
-list-style-type: none;
-overflow: auto;
-}
-
 .about-services h2, h5{
 clear: none;
 }
 
+.individual-services {
+list-style-type: none;
+overflow: auto;
+}
 
 .img-left {
   float: left;
@@ -371,4 +381,26 @@ padding: 9px 0px 42px 0px;
   font-weight: bold;
   padding: 11px 59px;
   text-align: center;
+}
+.blog-post-entry {
+  float: left;
+  width: 70%;
+}
+.sidebarx {
+  float: left;
+  width: 30%;
+}
+.blog-page aside.sidebar {
+	border-left: 1px solid #bfbfbf;
+	padding: 55px 0;
+  float: none;
+  width: auto;
+}
+.blog-page .main-content {
+  float:none;
+  width:auto;
+}
+
+.blog-page .navigation {
+  padding: 18px 0;
 }
