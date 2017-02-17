@@ -12,9 +12,32 @@
 
 @import url("../accelerate-theme/style.css");
 
+
+
 .home-page {
     background: url("img/taxi-photo.jpg") no-repeat scroll left center / cover rgba(0, 0, 0, 0);
     height: 265px;
+}
+
+.error404 {
+  background: url("img/tropical-paradise.jpg") no-repeat scroll left center/ cover rgba(0,0,0,0);
+}
+.position-lower {
+    color: #f318ce;
+    position: absolute; top: 200px;
+    width: 960px;
+
+    margin-left: -201px;
+    bottom: 0px;
+    left: 19%;
+}
+
+
+.position-left {
+  float: left;
+}
+.position-right {
+  float: right;
 }
 
 .homepage-hero {

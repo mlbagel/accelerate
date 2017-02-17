@@ -14,7 +14,7 @@
 	<?php }	else { ?>
 
 			<div class="post-author">
-					<div class="avatar"><img src="upload/2017/02/emily2.jpg" alt=""></div>
+					<div class="avatar"><img src="uploads/2017/02/emily2.jpg" alt=""></div>
 					<div class="intro-text">I’m Emily, the lead developer at <a href="http://skillcrush.com/">Skillcrush</a> as well as an instructor in Ruby and JavaScript. This is my blog full of inspiration.</div>
 				</div>
 
