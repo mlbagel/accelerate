@@ -11,8 +11,19 @@
 */
 
 @import url("../accelerate-theme/style.css");
-
-
+/*defualt version*/
+@font-face {
+  font-family: 'catamaran500';
+  src:
+  local('Catamaran 500'),
+  local('catamaran-500'),
+   url('fonts/catamaran_500.ttf')
+  format('truetype');
+}
+html, body {
+  min-height: 100vh;
+  min-height: 100%;
+}
 
 .home-page {
     background: url("img/taxi-photo.jpg") no-repeat scroll left center / cover rgba(0, 0, 0, 0);
@@ -22,22 +33,34 @@
 .error404 {
   background: url("img/tropical-paradise.jpg") no-repeat scroll left center/ cover rgba(0,0,0,0);
 }
+
+.error404 .site-footer {
+   display:none;
+}
+.content404 h1 {
+  font-family: 'catamaran500', sans-serif;
+  font-size: 200px;
+  color: #f318c3;
+
+}
+
 .position-lower {
     color: #f318ce;
-    position: absolute; top: 200px;
-    width: 960px;
-
-    margin-left: -201px;
-    bottom: 0px;
+    position: absolute;
+    width: 800px;
+    margin-left: -185px;
+    bottom: 10px;
     left: 19%;
 }
 
 
 .position-left {
   float: left;
+  text-align: center;
 }
 .position-right {
   float: right;
+  text-align: center;
 }
 
 .homepage-hero {
@@ -198,9 +221,10 @@ img {
 
 .blog-post {
 	width: 44.75%;
-	padding-right: 50px;
+	padding-right: 100px;
 	float: left;
 }
+
 .blog-post h4 {
 	font: 16px 'Montserrat';
 	color: #a6a6a6;
@@ -215,6 +239,49 @@ img {
 	font: 700 15px 'Montserrat';
 	color: #45ac9d;
 	text-transform: uppercase;
+}
+
+.widget-area {
+  width: 44.75%;
+  float: left;
+}
+
+#secondary .widget {
+	font-size: 0.83em;
+	font-weight: 600;
+	padding: 0 0px;
+}
+
+#secondary .widget-title:after{
+   content: "@Accelerate";
+   display: block;
+   color: #3b3b3b;
+   font: 700 24px 'Montserrat';
+   margin: 36px 0px;
+}
+
+#secondary .widget-title {
+  font: 16px 'Montserrat';
+  color: #a6a6a6;
+  text-transform: uppercase;
+  margin: 0 0 0 0px;
+}
+
+.widget ul {
+	margin: 0 0 40px 0px;
+  list-style: none;
+}
+.widget li {
+font-family: inherit;
+font-size: 16.5px;
+font-weight: normal;
+line-height: inherit;
+}
+
+.twitter-follow {
+font: 700 15px 'Montserrat';
+color: #45ac9d;
+text-transform: uppercase;
 }
 
 /*.blog-page .site-content {
