@@ -222,6 +222,7 @@ img {
 .blog-post {
 	width: 44.75%;
 	padding-right: 100px;
+  margin-bottom: 60px;
 	float: left;
 }
 
@@ -240,10 +241,50 @@ img {
 	color: #45ac9d;
 	text-transform: uppercase;
 }
+.post-entry {
+  padding-right: 25px;
+}
+
+.blog-page .sidebarx {
+  border-left: 1px solid #bfbfbf;
+  float: left;
+  width: 29%;
+}
+
+.blog-page .sidebarx aside.sidebar {
+  border-left: none;
+  padding: 0px;
+}
+
+.widget {
+  padding: 0 0 0 40px;
+}
+
+.widget-title {
+  font: 300 18px 'Montserrat';
+	color: #45ac9d;
+	text-transform: uppercase;
+  margin: 60px 0 0px;
+}
+
+#search-2 .widget-title h2 {
+  margin: 0px;
+}
+
+.sidebarx aside.widget ul {
+    font-size: 0.83em;
+    font-weight: normal;
+    padding: 20px 0 0 0;
+
+}
 
 .widget-area {
   width: 44.75%;
   float: left;
+}
+
+.form-button {
+  padding: 12px 0px;
 }
 
 #secondary .widget {
@@ -271,7 +312,7 @@ img {
 	margin: 0 0 40px 0px;
   list-style: none;
 }
-.widget li {
+#secondary .widget li {
 font-family: inherit;
 font-size: 16.5px;
 font-weight: normal;
@@ -282,6 +323,10 @@ line-height: inherit;
 font: 700 15px 'Montserrat';
 color: #45ac9d;
 text-transform: uppercase;
+}
+
+span.stt-em {
+  display: none;
 }
 
 /*.blog-page .site-content {
